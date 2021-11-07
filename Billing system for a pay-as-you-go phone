@@ -1,0 +1,11 @@
+Creating a billing system for a pay-as-you-go phone. If the phone_balance is below 550, the system removes 1000 from the bank balance to top up the phone balance. 
+
+phone_balance = 500
+bank_balance = 500000
+print(phone_balance, bank_balance)
+
+if phone_balance < 550:
+  phone_balance += 1000
+  bank_balance -= 1000
+  
+print(phone_balance, bank_balance)
