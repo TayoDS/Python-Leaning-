@@ -1,0 +1,47 @@
+#List are mutable and ordered
+a = [1, 5, 8]
+b = [2, 6, 9, 10]
+c = [100, 200]
+
+print(max([len(a), len(b), len(c)]))
+print(min([len(a), len(b), len(c)]))
+
+#tuples are immutable and ordered
+location = (13.4125, 103.866667)
+print("Latitude:", location[0])
+print("Longitude:", location[1])
+
+#sets are not ordered, are mutable and does not contain duplicates
+numbers = [1, 2, 6, 3, 1, 1, 6]
+unique_nums = set(numbers)
+print(unique_nums)
+
+fruit = {"apple", "banana", "orange", "grapefruit"}  # define a set
+
+print("watermelon" in fruit)  # check for element
+
+fruit.add("watermelon")  # add an element
+print(fruit)
+
+print(fruit.pop())  # remove a random element
+print(fruit)
+
+#dictionary keys are not mutable, values are mutable
+
+elements = {"hydrogen": 1, "helium": 2, "carbon": 6}
+print(elements["helium"])  # print the value mapped to "helium"
+elements["lithium"] = 3
+print(elements)
+
+#compund datastructures
+
+elements = {"hydrogen": {"number": 1,
+                         "weight": 1.00794,
+                         "symbol": "H"},
+              "helium": {"number": 2,
+                         "weight": 4.002602,
+                         "symbol": "He"}}
+                         
+oxygen = {"number":8,"weight":15.999,"symbol":"O"}  # create a new oxygen dictionary 
+elements["oxygen"] = oxygen  # assign 'oxygen' as a key to the elements dictionary
+print('elements = ', elements)
